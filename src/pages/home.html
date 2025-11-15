@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FoodFast | Home</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="navbar.js"></script>
+	</head>
+	
+
+	<body class="min-h-screen flex flex-col ">
+		<!-- Navbar placeholder -->
+		<div id="navbar"></div>
+		<!-- Main Content -->
+		<main
+			class="flex-1 p-4 grid grid-cols-1 md:grid-cols-3 gap-4  pt-20"
+			id="menuContainer">
+			<!-- Menu items will be loaded here dynamically -->
+		</main>
+
+		<!-- Footer -->
+		<footer class="bg-gray-200 text-center p-4">
+			&copy; 2025 FoodFast. All rights reserved.
+		</footer>
+
+		<script src="home.js">
+					// Load navbar.html into #navbar
+				fetch("navbar.html")
+			.then(res => {
+			  if (!res.ok) throw new Error("Failed to load navbar.html");
+			  return res.text();
+			})
+			.then(html => {
+			  document.getElementById("navbar").innerHTML = html;
+
+			  // Highlight active link
+			  const currentPath = window.location.pathname.split("/").pop();
+			  document.querySelectorAll("#navbar nav a").forEach(link => {
+			    if (link.getAttribute("href") === currentPath) {
+			      link.classList.add("text-green-600", "font-semibold");
+			    } else {
+			      link.classList.add("hover:text-green-600");
+			    }
+			  });
+			})
+			.catch(err => {
+			  console.error("Navbar load error:", err);
+			});
+		</script>
+	</body>
+</html>

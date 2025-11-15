@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FoodFast | Login / Signup</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="min-h-screen flex items-center justify-center bg-gray-100">
+		<div class="bg-white shadow rounded-lg w-96 p-6">
+			<!-- App name -->
+			<h1 class="text-2xl font-bold text-center mb-4 text-blue-600">
+				FoodFast
+			</h1>
+
+			<!-- Tabs -->
+			<div class="flex border-b mb-4">
+				<button id="tabLogin" class="w-1/2 py-2 rounded-lg bg-white shadow">
+					Login
+				</button>
+				<button
+					id="tabSignup"
+					class="w-1/2 py-2 rounded-lg text-gray-600 hover:text-gray-900">
+					Signup
+				</button>
+			</div>
+
+			<!-- Login Form -->
+			<form id="loginForm" class="space-y-3">
+				<input
+					id="loginEmail"
+					type="email"
+					placeholder="Email"
+					class="w-full p-2 border rounded"
+					required />
+				<input
+					id="loginPassword"
+					type="password"
+					placeholder="Password"
+					class="w-full p-2 border rounded"
+					required />
+				<div class="status text-sm h-5"></div>
+				<button
+					type="submit"
+					class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+					Log in
+				</button>
+			</form>
+
+			<!-- Signup Form (hidden by default) -->
+			<form id="signupForm" class="space-y-3 hidden">
+				<input
+					id="signupEmail"
+					type="email"
+					placeholder="Email"
+					class="w-full p-2 border rounded"
+					required />
+				<input
+					id="signupPassword"
+					type="password"
+					placeholder="Password"
+					class="w-full p-2 border rounded"
+					required />
+				<input
+					id="signupConfirm"
+					type="password"
+					placeholder="Confirm password"
+					class="w-full p-2 border rounded"
+					required />
+				<div class="status text-sm h-5"></div>
+				<button
+					type="submit"
+					class="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600">
+					Create account
+				</button>
+			</form>
+
+			<!-- Info -->
+			<p class="text-xs text-gray-500 mt-4 text-center">
+				Data is stored in your browser using
+				<strong>localStorage</strong>
+				(plain text passwords for simplicity).
+			</p>
+		</div>
+
+		<!-- Script -->
+		<script src="auth.js"></script>
+	</body>
+</html>

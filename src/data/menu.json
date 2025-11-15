@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Pizza",
+    "description": "Classic pizza with tomato, mozzarella, and basil.",
+    "price": 8.99,
+    "image": "../assets/images/Margherita-Pizza.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pepperoni Pizza",
+    "description": "Topped with mozzarella, tomato sauce, and spicy pepperoni.",
+    "price": 10.99,
+    "image": "../assets/images/Pepperoni-Pizza.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Veggie Burger",
+    "description": "Grilled veggie patty with lettuce, tomato, and avocado.",
+    "price": 7.49,
+    "image": "../assets/images/Veggie-Burger.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Cheeseburger",
+    "description": "Juicy beef patty topped with cheddar cheese.",
+    "price": 8.49,
+    "image": "../assets/images/Cheeseburger.jpg"
+  },
+  {
+    "id": 5,
+    "name": "French Fries",
+    "description": "Crispy golden fries with a pinch of salt.",
+    "price": 2.99,
+    "image": "../assets/images/French-Fries.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Chicken Wings",
+    "description": "Spicy buffalo chicken wings served with dip.",
+    "price": 6.99,
+    "image": "../assets/images/Chicken-Wings.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Caesar Salad",
+    "description": "Fresh romaine lettuce, croutons, and parmesan.",
+    "price": 5.99,
+    "image": "../assets/images/Caesar-Salad.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Pasta Alfredo",
+    "description": "Creamy pasta tossed with parmesan and butter.",
+    "price": 9.99,
+    "image": "../assets/images/Pasta-Alfredo.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Garlic Bread",
+    "description": "Toasted bread with garlic and melted butter.",
+    "price": 3.49,
+    "image": "../assets/images/Garlic-Bread.png"
+  },
+  {
+    "id": 10,
+    "name": "Tacos",
+    "description": "Mexican-style tacos with beef, cheese, and lettuce.",
+    "price": 4.99,
+    "image": "../assets/images/Tacos.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Chocolate Brownie",
+    "description": "Rich chocolate brownie with a gooey center.",
+    "price": 3.99,
+    "image": "../assets/images/Chocolate-Brownie.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Ice Cream Sundae",
+    "description": "Vanilla ice cream topped with chocolate sauce.",
+    "price": 4.49,
+    "image": "../assets/images/Ice-Cream-Sundae.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Cheesecake",
+    "description": "Creamy cheesecake with a buttery crust.",
+    "price": 5.49,
+    "image": "../assets/images/Cheesecake.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Iced Coffee",
+    "description": "Cold brewed coffee with ice and cream.",
+    "price": 2.99,
+    "image": "../assets/images/Iced-Coffee.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Lemonade",
+    "description": "Refreshing homemade lemonade with mint.",
+    "price": 2.49,
+    "image": "../assets/images/Lemonade.png"
+  },
+  {
+    "id": 16,
+    "name": "Onion Rings",
+    "description": "Crispy onion rings with golden batter.",
+    "price": 3.29,
+    "image": "../assets/images/Onion-Rings.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Club Sandwich",
+    "description": "Triple layered sandwich with chicken, bacon, and lettuce.",
+    "price": 6.49,
+    "image": "../assets/images/Club-Sandwich.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Grilled Salmon",
+    "description": "Perfectly grilled salmon with herbs and lemon.",
+    "price": 12.99,
+    "image": "../assets/images/Grilled-Salmon.jpg"
+  }
+]

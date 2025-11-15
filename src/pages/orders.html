@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Your Orders - FoodFast</title>
+		<!-- Tailwind CDN -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body class="bg-gray-50 font-sans">
+		<!-- Navbar placeholder -->
+		<div id="navbar"></div>
+
+		<!-- Main -->
+		<main class="container mx-auto px-6 py-8 pt-20">
+			<h2 class="text-2xl font-bold mb-6">Recent Orders</h2>
+			<div id="recentOrders" class="space-y-6">
+				<p class="text-gray-500">No recent orders.</p>
+			</div>
+
+			<!-- Past Orders -->
+			<div class="mt-10">
+				<button
+					id="togglePastOrders"
+					class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">
+					Show Past Orders
+				</button>
+				<div id="pastOrders" class="mt-6 space-y-6 hidden"></div>
+			</div>
+		</main>
+
+		<script src="orders.js">
+			    // Load navbar.html into #navbar
+			fetch("./navbar.html")
+			  .then(res => res.text())
+			  .then(html => {
+			    document.getElementById("navbar").innerHTML = html;
+
+			    // Highlight active link
+			    const currentPath = window.location.pathname.split("/").pop();
+			    document.querySelectorAll("#navbar nav a").forEach(link => {
+			      if (link.getAttribute("href") === currentPath) {
+			        link.classList.add("text-green-600", "font-semibold");
+			      } else {
+			        link.classList.add("hover:text-green-600");
+			      }
+			    });
+			  });
+		</script>
+	</body>
+</html>
